@@ -1,0 +1,27 @@
+{
+  "name": "node-parchong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GolderBrother/node-parchong-simple.git"
+  },
+  "keywords": [
+    "node-parchong\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[parchong"
+  ],
+  "author": "James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GolderBrother/node-parchong-simple/issues"
+  },
+  "homepage": "https://github.com/GolderBrother/node-parchong-simple#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "superagent": "^3.8.3",
+    "superagent-charset": "^1.2.0"
+  }
+}
