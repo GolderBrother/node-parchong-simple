@@ -30,8 +30,7 @@ app.get('/index',function(req,res,next){
         // next()
     }
     let items = [];
-    let type = req.query.type || 'weixin'
-    let page = req.query.page || 1;
+    let { type = 'weixin', page = 1} = req.query;
     const url = `${baseUrl}tx/${type}tx_${page}.html`
     superagent.get(url).charset('gb2312').end((err,data) => {
         if(err){
