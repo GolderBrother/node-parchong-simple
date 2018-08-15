@@ -32,7 +32,7 @@ app.get('/index',function(req,res,next){
     let items = [];
     let type = req.query.type || 'weixin'
     let page = req.query.page || 1;
-    let url = `${baseUrl}tx/${type}tx_${page}.html`
+    const url = `${baseUrl}tx/${type}tx_${page}.html`
     superagent.get(url).charset('gb2312').end((err,data) => {
         if(err){
             console.log('Error:' + err)
@@ -40,7 +40,7 @@ app.get('/index',function(req,res,next){
             return
         }
         let htmlStr = data.text
-        let $ = cheerio.load(htmlStr)
+        const $ = cheerio.load(htmlStr)
         $('div.g-main-bg ul.g-gxlist-imgbox li a').each((index,element) => {
             const $element = $(element);
             const $subElement = $element.find('img');
